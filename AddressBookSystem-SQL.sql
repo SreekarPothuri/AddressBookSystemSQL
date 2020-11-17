@@ -27,3 +27,7 @@ UPDATE addressBook SET ZipCode = 524101 WHERE FirstName = 'Abhi';
 UPDATE addressBook SET Email = 'jagadessh123@yahoo.com' WHERE LastName = 'Chilla'; 
 
 DELETE FROM addressBook WHERE FirstName = 'Abhi';
+
+SELECT * FROM addressBook WHERE City = 'Ponnur';
+SELECT * FROM addressBook WHERE State = 'AndhraPradesh';
+
