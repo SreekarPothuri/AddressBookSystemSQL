@@ -21,3 +21,7 @@ INSERT INTO addressBook(FirstName,LastName,Address,City,State,Zipcode,PhoneNumbe
 						('Jagadeesh','Chilla','SPPRoad','Bandhar','AndhraPradesh',522121,9876775510,'jaggu95@gmail.com');
 
 SELECT * FROM addressBook;
+
+UPDATE addressBook SET State = 'Punjab' WHERE FirstName = 'Sreekar';
+UPDATE addressBook SET ZipCode = 524101 WHERE FirstName = 'Abhi'; 
+UPDATE addressBook SET Email = 'jagadessh123@yahoo.com' WHERE LastName = 'Chilla'; 
