@@ -25,3 +25,5 @@ SELECT * FROM addressBook;
 UPDATE addressBook SET State = 'Punjab' WHERE FirstName = 'Sreekar';
 UPDATE addressBook SET ZipCode = 524101 WHERE FirstName = 'Abhi'; 
 UPDATE addressBook SET Email = 'jagadessh123@yahoo.com' WHERE LastName = 'Chilla'; 
+
+DELETE FROM addressBook WHERE FirstName = 'Abhi';
