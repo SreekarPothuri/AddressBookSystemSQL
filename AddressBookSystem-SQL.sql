@@ -13,3 +13,11 @@ CREATE TABLE addressBook (
 );
 
 describe addressBook;
+
+INSERT INTO addressBook(FirstName,LastName,Address,City,State,Zipcode,PhoneNumber,Email) 
+				VALUES 
+						('Sreekar','Pothuri','RingRoad','Ponnur','AndhraPradesh',522124,9876543210,'pothuri98@gmail.com'),
+                        ('Abhi','Pulikonda','MainRoad','Ponnur','AndhraPradesh',522124,9876553200,'abhi98@gmail.com'),
+						('Jagadeesh','Chilla','SPPRoad','Bandhar','AndhraPradesh',522121,9876775510,'jaggu95@gmail.com');
+
+SELECT * FROM addressBook;
