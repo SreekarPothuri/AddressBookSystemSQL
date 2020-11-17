@@ -31,3 +31,6 @@ DELETE FROM addressBook WHERE FirstName = 'Abhi';
 SELECT * FROM addressBook WHERE City = 'Ponnur';
 SELECT * FROM addressBook WHERE State = 'AndhraPradesh';
 
+SELECT City,count(FirstName) FROM addressbook GROUP BY City;
+SELECT State,count(FirstName) FROM addressbook GROUP BY State;
+
