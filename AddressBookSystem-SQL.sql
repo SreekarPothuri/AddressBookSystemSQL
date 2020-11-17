@@ -40,4 +40,5 @@ ALTER TABLE addressBook ADD Type varchar(20) after LastName;
 UPDATE addressBook SET Type = 'Family' WHERE FirstName = 'Sreekar';
 UPDATE addressBook SET Type = 'Friends' WHERE FirstName = 'Jagadeesh';
 
+SELECT Type,count(FirstName) FROM addressbook GROUP BY Type;
 
