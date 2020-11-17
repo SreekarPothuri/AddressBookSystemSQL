@@ -34,3 +34,5 @@ SELECT * FROM addressBook WHERE State = 'AndhraPradesh';
 SELECT City,count(FirstName) FROM addressbook GROUP BY City;
 SELECT State,count(FirstName) FROM addressbook GROUP BY State;
 
+SELECT FirstName,City FROM addressbook GROUP BY City ORDER BY FirstName ASC;
+
