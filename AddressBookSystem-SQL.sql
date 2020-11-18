@@ -42,3 +42,22 @@ UPDATE addressBook SET Type = 'Friends' WHERE FirstName = 'Jagadeesh';
 
 SELECT Type,count(FirstName) FROM addressbook GROUP BY Type;
 
+INSERT INTO addressBook(FirstName,LastName,Address,City,State,Zipcode,PhoneNumber,Email) 
+				VALUES ('Anudeep','Betha','NetajiNagar','Rajamundry','AndhraPradesh',524424,9855643210,'deepu78@gmail.com');
+                
+ALTER TABLE addressBook ADD ID int NOT NULL AUTO_INCREMENT PRIMARY KEY;
+ALTER TABLE addressBook DROP COLUMN Type;
+CREATE TABLE RELATION(ID int NOT NULL AUTO_INCREMENT, Type varchar(20) NOT NULL,PRIMARY KEY(ID));
+INSERT INTO RELATION(Type) VALUES('Family'),('Friends');
+SELECT * FROM RELATION;
+
+CREATE TABLE addressBookRelation (
+    addressbookID int NOT NULL,
+    relationID int NOT NULL,
+    FOREIGN KEY (addressBookID) REFERENCES addressBook(ID),
+    FOREIGN KEY (relationID) REFERENCES RELATION(ID)
+);
+
+INSERT INTO addressBookRelation VALUES (1,1),(2,1),(3,1),(3,2);
+
+
