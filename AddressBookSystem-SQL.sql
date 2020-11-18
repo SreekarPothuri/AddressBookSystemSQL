@@ -60,4 +60,6 @@ CREATE TABLE addressBookRelation (
 
 INSERT INTO addressBookRelation VALUES (1,1),(2,1),(3,1),(3,2);
 
-
+SELECT * FROM addressBook;
+SELECT * FROM RELATION;
+SELECT * FROM addressBookRelation;
